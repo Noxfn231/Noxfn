@@ -13,7 +13,7 @@ public class PanelListas extends JPanel {
     public PanelListas(GestorMusica gestorMusica) {
         this.gestorMusica = gestorMusica;
         setLayout(new BorderLayout());
-        setBorder(BorderFactory.createTitledBorder("Listas de Reproducción"));
+        setBorder(BorderFactory.createTitledBorder("Listas de Reproduccion"));
 
         modeloListas = new DefaultListModel<>();
         listaReproduccion = new JList<>(modeloListas);
