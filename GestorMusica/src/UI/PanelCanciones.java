@@ -17,9 +17,9 @@ public class PanelCanciones extends JPanel {
         modeloCanciones = new DefaultListModel<>();
         JList<Cancion> listaCanciones = new JList<>(modeloCanciones);
 
-        JButton btnCrearCancion = new JButton("Crear Canción");
+        JButton btnCrearCancion = new JButton("Crear Cancion");
         btnCrearCancion.addActionListener(e -> {
-            String titulo = JOptionPane.showInputDialog(this, "Título de la canción:");
+            String titulo = JOptionPane.showInputDialog(this, "Título de la cancion:");
             if (titulo == null || titulo.isEmpty()) return;
 
             Object[] artistas = gestorMusica.getArtistas().toArray();
@@ -42,7 +42,7 @@ public class PanelCanciones extends JPanel {
             }
 
             ListaReproduccion lista = (ListaReproduccion) JOptionPane.showInputDialog(this,
-                    "Seleccione una lista para agregar la canción:", "Lista",
+                    "Seleccione una lista para agregar la cancion:", "Lista",
                     JOptionPane.QUESTION_MESSAGE, null, listas, listas[0]);
 
             if (lista != null) {
