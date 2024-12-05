@@ -38,7 +38,7 @@ public class VentanaPrincipal extends JFrame {
         actualizarAreaArtistas();
         actualizarAreaCanciones();
 
-        // Guardar datos automáticamente al cerrar la ventana
+        // Guardar datos automaticamente al cerrar la ventana
         addWindowListener(new java.awt.event.WindowAdapter() {
             @Override
             public void windowClosing(java.awt.event.WindowEvent windowEvent) {
@@ -84,9 +84,9 @@ public class VentanaPrincipal extends JFrame {
     private JPanel crearPanelCanciones() {
         JPanel panel = crearPanel("Canciones", areaCanciones);
 
-        JButton btnCrearCancion = new JButton("Crear Canción");
+        JButton btnCrearCancion = new JButton("Crear Cancion");
         btnCrearCancion.addActionListener(e -> {
-            String titulo = JOptionPane.showInputDialog(this, "Título de la canción:");
+            String titulo = JOptionPane.showInputDialog(this, "Título de la cancion:");
             if (titulo == null || titulo.isEmpty()) return;
 
             // Seleccionar artista existente
@@ -110,7 +110,7 @@ public class VentanaPrincipal extends JFrame {
             }
 
             ListaReproduccion lista = (ListaReproduccion) JOptionPane.showInputDialog(this,
-                    "Seleccione una lista para agregar la canción:", "Lista",
+                    "Seleccione una lista para agregar la cancion:", "Lista",
                     JOptionPane.QUESTION_MESSAGE, null, listas, listas[0]);
 
             if (lista != null) {
